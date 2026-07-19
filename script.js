@@ -281,7 +281,7 @@ const codeLines = [
   { text: "  name: \"Abdur Rahman\",", cls: "code-string" },
   { text: "  role: \"CSE student\",", cls: "code-string" },
   { text: "  skills: [\"Python\", \"JS\", \"HTML\", \"CSS\", \"C++\"],", cls: "code-string" },
-  { text: "  hobbies: \"Cricket, Tea, Tutoring\",", cls: "code-string" },
+  { text: "  hobbies: \"Cricket, Badminton, Tutoring\",", cls: "code-string" },
   { text: "  hireable: true", cls: "code-key" },
   { text: "};" }
 ];
