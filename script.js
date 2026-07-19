@@ -278,10 +278,10 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 
 const codeLines = [
   { text: "const developer = {", cls: "code-key" },
-  { text: "  name: \"Your Name\",", cls: "code-string" },
-  { text: "  role: \"CSE Graduate\",", cls: "code-string" },
-  { text: "  skills: [\"Python\", \"JS\", \"C++\"],", cls: "code-string" },
-  { text: "  loves: \"clean code & coffee\",", cls: "code-string" },
+  { text: "  name: \"Abdur Rahman\",", cls: "code-string" },
+  { text: "  role: \"CSE student\",", cls: "code-string" },
+  { text: "  skills: [\"Python\", \"JS\", \"HTML\", \"CSS\", \"C++\"],", cls: "code-string" },
+  { text: "  loves: \"Sharing knowledge with students\",", cls: "code-string" },
   { text: "  hireable: true", cls: "code-key" },
   { text: "};" }
 ];
