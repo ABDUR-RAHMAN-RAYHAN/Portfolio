@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdur Rahman — Portfolio</title>
+<meta name="description" content="Portfolio of Abdur Rahman, a Computer Science student building software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">&lt;/&gt; <span>Abdur Rahman</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="tab">About</a>
+      <a href="#skills" class="tab">Skills</a>
+      <a href="#projects" class="tab">Projects</a>
+      <a href="#experience" class="tab">Log</a>
+      <a href="#contact" class="tab">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-small nav-cta magnetic">Hire me</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-orbs" aria-hidden="true"></div>
+    <div class="hero-text">
+      <p class="eyebrow mono">// abdur_rahman.init()</p>
+      <h1 class="hero-title">Hi, I'm <span class="accent-text">Abdur Rahman</span>.<br>I build things<br>that compile<br>in the real world.</h1>
+      <p class="hero-sub">Fresh CSE student who enjoys turning ideas into working software — from clean backends to interfaces people actually enjoy using. Currently looking for my first part-time role.</p>
+      <br>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary magnetic">View projects</a>
+        <a href="/resume.pdf" class="btn btn-ghost magnetic">Download resume</a>
+      </div>
+      <div class="hero-meta mono">
+        <span><span class="dot dot-green"></span> Open to work</span>
+        <span>Uttara, Dhaka, Bangladesh</span>
+      </div>
+    </div>
+
+    <div class="hero-code">
+      <div class="editor-card tilt-card">
+        <div class="editor-bar">
+          <span class="editor-dot dot-red"></span>
+          <span class="editor-dot dot-yellow"></span>
+          <span class="editor-dot dot-green"></span>
+          <span class="editor-filename mono">about-me.js</span>
+        </div>
+        <pre class="editor-body mono"><code id="typedCode"></code><span class="cursor">&#9608;</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <p class="section-label mono">01 — About me</p>
+    <div class="about-grid">
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="myPic.png" alt="Portrait of Abdur Rahman" onerror="this.style.display='none'; this.parentElement.classList.add('photo-empty')">
+          <span class="photo-placeholder">add myPic.png</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <h2 class="section-title">A short readme about me</h2>
+        <p>I'm a Computer Science &amp; Engineering student who likes solving problems with clean, readable code. During my studies I've focused on <strong>web development, data structures, AI, and database management</strong>, and outside of coursework I've built a handful of side projects to learn how things actually work in production.</p>
+        <p>I care about writing code that's easy for the next person to read, and I'm comfortable moving between frontend, backend, and the occasional Python script that automates something tedious.</p>
+        <ul class="about-facts mono">
+          <li><span>degree</span> B.Sc. in Computer Science &amp; Engineering, United International University, expected 2027 (In Sha Allah)</li>
+          <li><span>focus</span> Web development</li>
+          <li><span>based_in</span> Uttara, Dhaka, Bangladesh</li>
+          <li><span>status</span> Open to junior roles</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section section-alt">
+    <p class="section-label mono">02 — Skills</p>
+    <h2 class="section-title">What I work with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card tilt-card">
+        <h3 class="skill-cat mono">"languages"</h3>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">C</span>
+          <span class="tag">C++</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-card tilt-card">
+        <h3 class="skill-cat mono">"frontend"</h3>
+        <div class="tag-row">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+        </div>
+      </div>
+      <div class="skill-card tilt-card">
+        <h3 class="skill-cat mono">"backend"</h3>
+        <div class="tag-row">
+          <span class="tag">Flask</span>
+          <span class="tag">Node.js</span>
+        </div>
+      </div>
+      <div class="skill-card tilt-card">
+        <h3 class="skill-cat mono">"tools"</h3>
+        <div class="tag-row">
+          <span class="tag">GitHub</span>
+          <span class="tag">Windows</span>
+          <span class="tag">VS Code</span>
+        </div>
+      </div>
+      <div class="skill-card tilt-card">
+        <h3 class="skill-cat mono">"databases"</h3>
+        <div class="tag-row">
+          <span class="tag">MySQL</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MongoDB</span>
+        </div>
+      </div>
+      <div class="skill-card tilt-card">
+        <h3 class="skill-cat mono">"cs_fundamentals"</h3>
+        <div class="tag-row">
+          <span class="tag">Data Structures</span>
+          <span class="tag">Algorithms</span>
+          <span class="tag">OOP</span>
+          <span class="tag">DBMS</span>
+          <span class="tag">SPL</span>
+          <span class="tag">AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <p class="section-label mono">03 — Projects</p>
+    <h2 class="section-title">Things I've built</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card tilt-card">
+        <div class="editor-bar">
+          <span class="editor-dot dot-red"></span>
+          <span class="editor-dot dot-yellow"></span>
+          <span class="editor-dot dot-green"></span>
+          <span class="editor-filename mono">PriceWise</span>
+        </div>
+        <div class="project-body">
+          <h3>PriceWise</h3>
+          <p>It's a website which helps users to save time in online shopping by comparing product prices across different platform or websites.</p>
+          <div class="tag-row">
+            <span class="tag tag-sm">Python</span>
+            <span class="tag tag-sm">HTML</span>
+            <span class="tag tag-sm">CSS</span>
+            <span class="tag tag-sm">MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ABDUR-RAHMAN-RAYHAN/PriceWise-your-smart-shopping-helper/tree/main/PRICEWISE" class="link-arrow">Source code →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card tilt-card">
+        <div class="editor-bar">
+          <span class="editor-dot dot-red"></span>
+          <span class="editor-dot dot-yellow"></span>
+          <span class="editor-dot dot-green"></span>
+          <span class="editor-filename mono">Online clearence management</span>
+        </div>
+        <div class="project-body">
+          <h3>Online clearence management</h3>
+          <p>This helps students to apply for any type of clearence including emergency cases and also gets feedback plus certificate</p>
+          <div class="tag-row">
+            <span class="tag tag-sm">HTML</span>
+            <span class="tag tag-sm">CSS</span>
+            <span class="tag tag-sm">MySQL</span>
+            <span class="tag tag-sm">PHP</span>
+            <span class="tag tag-sm">Java_Script</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ABDUR-RAHMAN-RAYHAN/Online_Clearence_System-Web-Programming-/tree/main/online_clearance_system" class="link-arrow">Source code →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card tilt-card">
+        <div class="editor-bar">
+          <span class="editor-dot dot-red"></span>
+          <span class="editor-dot dot-yellow"></span>
+          <span class="editor-dot dot-green"></span>
+          <span class="editor-filename mono">MH Coaching Center</span>
+        </div>
+        <div class="project-body">
+          <h3>MH Coaching Center</h3>
+          <p>It's an coaching center management system where three type of users exists(owner, teacher& student)</p>
+          <div class="tag-row">
+            <span class="tag tag-sm">HTML</span>
+            <span class="tag tag-sm">CSS</span>
+            <span class="tag tag-sm">Java_Script</span>
+            <span class="tag tag-sm">Python</span>
+            <span class="tag tag-sm">MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ABDUR-RAHMAN-RAYHAN/MH_Coaching_center/tree/main/mhcoaching" class="link-arrow">Source code →</a>
+          </div>
+        </div>
+      </article>
+
+      <!--<article class="project-card tilt-card">
+        <div class="editor-bar">
+          <span class="editor-dot dot-red"></span>
+          <span class="editor-dot dot-yellow"></span>
+          <span class="editor-dot dot-green"></span>
+          <span class="editor-filename mono">project-four.py</span>
+        </div>
+        <div class="project-body">
+          <h3>Project Name Four</h3>
+          <p>One or two sentences on what this project does and the problem it solves. Mention a real result or metric if you have one.</p>
+          <div class="tag-row">
+            <span class="tag tag-sm">Python</span>
+            <span class="tag tag-sm">Data Analysis</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Live demo →</a>
+            <a href="#" class="link-arrow">Source code →</a>
+          </div>
+        </div>
+      </article> -->
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE / EDUCATION ============ -->
+  <section id="experience" class="section section-alt">
+    <p class="section-label mono">04 — log</p>
+    <h2 class="section-title">Commit history</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="commit-hash mono">student</span>
+        <div class="timeline-content">
+          <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+          <p class="timeline-meta mono">United International University · 2023(Last) – At Present</p>
+          <p>Relevant coursework: Data Structures &amp; Algorithms, Database Systems, Software Engineering. CGPA: [3.66* / 4.00].</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="commit-hash mono">HSC</span>
+        <div class="timeline-content">
+          <h3>Part Time [MH Coaching Center]</h3>
+          <p class="timeline-meta mono">Tutor · [january 2025] –  present</p>
+          <p>I am tutoring them in Information and Communication Technology [HTML, MySQL, etc.].</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="commit-hash mono">SSC</span>
+        <div class="timeline-content">
+          <h3>Part Time [MH Coaching Center]</h3>
+          <p class="timeline-meta mono">Tutor · [january 2025] –  present</p>
+          <p>I am tutoring them Higher Mathematics and Genaral Mathematics</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <p class="section-label mono">05 — contact</p>
+    <h2 class="section-title">Let's build something</h2>
+    <p class="contact-sub">Have a role, a project, or just want to talk about code? Send a message. This form is not work now perfectly, you have to manually email me manually</p><br>
+    
+
+    <div class="contact-grid">
+      <form id="contactForm" class="contact-form">
+        <p class="req-line mono">POST /contact HTTP/1.1</p>
+        <label class="field">
+          <span class="mono">"Name"</span>
+          <input type="text" name="name" id="name" required placeholder="Enter your name">
+        </label>
+        <label class="field">
+          <span class="mono">"Email"</span>
+          <input type="email" name="email" id="email" required placeholder="something@example.com">
+        </label>
+        <label class="field">
+          <span class="mono">"Message"</span>
+          <textarea name="message" id="message" rows="5" required placeholder="Let's talk about..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary magnetic" id="submitBtn">Send message</button>
+        <p class="form-status mono" id="formStatus" role="status"></p>
+      </form>
+
+      <div class="contact-side">
+        <a href="#contact" class="contact-link tilt-card magnetic">
+          <span class="mono">Email</span>
+          abdurrahman017370@gmail.com
+        </a>
+        <a href="#contact" class="contact-link tilt-card magnetic">
+          <span class="mono">Phone Number</span>
+          +8801571203464
+        </a>
+        <a href="https://github.com/ABDUR-RAHMAN-RAYHAN" target="_blank" rel="noopener" class="contact-link tilt-card magnetic">
+          <span class="mono">Github</span>
+          ABDUR-RAHMAN-RAYHAN
+        </a>
+        <a href="https://www.linkedin.com/in/abdur-rahman-9717b2300/" target="_blank" rel="noopener" class="contact-link tilt-card magnetic">
+          <span class="mono">Linkedin</span>
+          Abdur Rahman
+        </a>
+        <a href="#contact" class="contact-link tilt-card magnetic">
+          <span class="mono">Location</span>
+          Dhaka, Bangladesh
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">&copy; <span id="year"></span> Abdur Rahman — built with HTML, CSS, JS &amp; Python.</p>
+</footer>
+
+<div class="mascot-bubble" id="mascotBubble"></div>
+
+<button class="mascot-float" id="mascotFloat" aria-label="Say hi to Robo, your site buddy" type="button">
+  <div class="mascot-float-bob">
+    <div class="mascot-float-inner" id="mascotFloatInner">
+      <svg viewBox="0 0 100 100" class="mascot-svg" aria-hidden="true">
+      <line x1="50" y1="14" x2="50" y2="2" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+      <circle class="mascot-antenna-tip" cx="50" cy="2" r="4" fill="var(--accent-2)"/>
+      <ellipse class="mascot-ear" cx="24" cy="22" rx="11" ry="13" fill="var(--accent)"/>
+      <ellipse class="mascot-ear" cx="76" cy="22" rx="11" ry="13" fill="var(--accent)"/>
+      <circle cx="50" cy="54" r="40" fill="var(--accent)"/>
+      <circle cx="50" cy="58" r="31" fill="#FFFFFF"/>
+      <g class="mascot-eye-blink">
+        <circle cx="38" cy="56" r="8" fill="#14213D"/>
+        <circle class="mascot-pupil" id="mascotPupilL" cx="38" cy="56" r="3" fill="#FFFFFF"/>
+      </g>
+      <g class="mascot-eye-blink">
+        <circle cx="62" cy="56" r="8" fill="#14213D"/>
+        <circle class="mascot-pupil" id="mascotPupilR" cx="62" cy="56" r="3" fill="#FFFFFF"/>
+      </g>
+      <ellipse cx="50" cy="66" rx="4" ry="3.2" fill="var(--accent-2)"/>
+      <path class="mascot-mouth" d="M43 74 Q50 79 57 74" fill="none" stroke="#14213D" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>
+    </div>
+  </div>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
