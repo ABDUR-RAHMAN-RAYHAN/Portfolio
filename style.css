@@ -688,6 +688,7 @@ body.has-fine-pointer textarea{ cursor: none; }
 
 .contact-side{ display:grid; gap: 14px; align-content:start; }
 .contact-link{
+  position: relative;
   display:flex;
   flex-direction:column;
   gap: 4px;
@@ -700,6 +701,27 @@ body.has-fine-pointer textarea{ cursor: none; }
 }
 .contact-link span{ color: var(--accent); font-size: 0.75rem; font-weight:500; }
 .contact-link:hover{ border-color: var(--accent); transform: translateX(3px); }
+
+.copy-hint{
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%) translateX(6px);
+  background: var(--green);
+  color: #06110c;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+  white-space: nowrap;
+}
+.copy-hint.is-visible{
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
 
 /* =========================================================
    FOOTER
