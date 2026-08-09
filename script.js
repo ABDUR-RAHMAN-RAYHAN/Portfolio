@@ -460,3 +460,23 @@ form?.addEventListener("submit", async (e) => {
     submitBtn.textContent = "Send message";
   }
 });
+// =========================================================
+// Phone contact link: copy the number to clipboard, show a quick
+// confirmation, then let the tel: link continue on to open the dialer
+// =========================================================
+const phoneLink = document.getElementById("phoneLink");
+const copyHint = document.getElementById("copyHint");
+
+phoneLink?.addEventListener("click", (e) => {
+  const number = phoneLink.getAttribute("href").replace("tel:", "");
+
+  if (navigator.clipboard?.writeText) {
+    navigator.clipboard.writeText(number).catch(() => {});
+  }
+
+  if (copyHint) {
+    copyHint.classList.add("is-visible");
+    clearTimeout(phoneLink._hintTimeout);
+    phoneLink._hintTimeout = setTimeout(() => copyHint.classList.remove("is-visible"), 2000);
+  }
+});
