@@ -91,12 +91,6 @@ const pupilR = document.getElementById("mascotPupilR");
 
 const mascotTips = [
   "Hi! I'm Robo 👋",
-  "I'll follow you with my eyes wherever you go 👀",
-  "Psst — don't forget to add real project links.",
-  "Try the contact form, it actually works.",
-  "CSE grads make the best robots.",
-  "Tip: swap my colors in style.css → --accent",
-  "You've got this. Ship the portfolio!"
 ];
 let tipIndex = 0;
 let bubbleTimeout;
