@@ -10,8 +10,9 @@ style.css        all styling (design tokens at the top)
 script.js        typing effect, mobile nav, scroll reveal, contact form logic
 app.py           optional Flask backend that emails contact form submissions
 requirements.txt Python dependencies for app.py
-your-photo.jpg    <- add your own photo here (about section)
-resume.pdf        <- add your own résumé here (hero "Download résumé" button)
+myPic.png          your photo (about section)
+resume.pdf         software engineer CV (hero "Download resume" button)
+resume-teaching.pdf teaching CV (hero "Teaching CV" button)
 ```
 
 ## 1. Add your content

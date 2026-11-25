@@ -273,8 +273,9 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 const codeLines = [
   { text: "const developer = {", cls: "code-key" },
   { text: "  name: \"Abdur Rahman\",", cls: "code-string" },
-  { text: "  role: \"CSE student\",", cls: "code-string" },
-  { text: "  skills: [\"Python\", \"JS\", \"HTML\", \"CSS\", \"C++\"],", cls: "code-string" },
+  { text: "  role: \"CSE student & tutor\",", cls: "code-string" },
+  { text: "  skills: [\"Python\", \"Java\", \"JS\", \"C++\", \"MySQL\"],", cls: "code-string" },
+  { text: "  cgpa: 3.72,", cls: "code-key" },
   { text: "  hobbies: \"Cricket, Badminton, Tutoring\",", cls: "code-string" },
   { text: "  hireable: true", cls: "code-key" },
   { text: "};" }
@@ -448,7 +449,7 @@ form?.addEventListener("submit", async (e) => {
     status.style.color = "var(--accent-2)";
     const subject = encodeURIComponent(`Portfolio contact from ${payload.name}`);
     const body = encodeURIComponent(`${payload.message}\n\n— ${payload.name} (${payload.email})`);
-    window.location.href = `mailto:abdurrahman017370@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:aabdurrahmanrayhan@gmail.com?subject=${subject}&body=${body}`;
   } finally {
     submitBtn.disabled = false;
     submitBtn.textContent = "Send message";
